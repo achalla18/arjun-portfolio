@@ -1,0 +1,36 @@
+# ------------------------------------------------------------------
+# You: name, the hero text, and your links.
+# See EDITING.md for the basics. Save the file and the site updates.
+# ------------------------------------------------------------------
+
+name: Arjun Challa
+
+headline: Building Intelligence for the Physical World.
+intro: >-
+  Founder of Geovaro Intelligence. I build systems to understand, predict,
+  and solve complex real-world problems.
+
+# Used by search engines and link previews (one or two sentences).
+description: >-
+  Arjun Challa, student researcher and software engineer working on geospatial
+  machine learning, remote sensing, spatial algorithms, and software systems.
+  Founder of Geovaro Intelligence.
+
+# Leave a link empty (nothing after the colon) to hide it everywhere.
+links:
+  email: arjun.c.1818@gmail.com
+  linkedin: https://www.linkedin.com/in/arjun-challa-614950347/
+  github: https://github.com/achalla18
+  x: https://x.com/achalla18
+  # Put your résumé PDF in the public/ folder, then write its file name here,
+  # e.g.  resume: resume.pdf
+  resume:
+
+# Section headings, top to bottom.
+sections:
+  now: Now
+  explore: Explore My Work
+  exploreSubtitle: Research and engineering across the physical world.
+  past: Past
+  experiments: A Few of My Experiments
+  footerNote: The hero map is schematic.

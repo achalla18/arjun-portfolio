@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <meta
+      name="description"
+      content="{{description}}"
+    />
+    <meta name="theme-color" content="#1b1f1d" />
+    <meta property="og:title" content="{{title}}" />
+    <meta
+      property="og:description"
+      content="{{description}}"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="max-width:720px;margin:64px auto;padding:0 20px;font-family:system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6">
+        <h1 style="color:var(--heading);margin:0 0 8px">{{name}}</h1>
+        <p style="color:var(--heading);font-size:1.25rem;margin:0 0 16px">{{headline}}</p>
+        <p>{{intro}}</p>
+        <p>This portfolio uses JavaScript for its interactive maps and project details.</p>
+        <p>
+          <a style="color:var(--accent)" href="{{linkedin}}">LinkedIn</a> ·
+          <a style="color:var(--accent)" href="mailto:{{email}}">{{email}}</a>
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

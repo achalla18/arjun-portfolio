@@ -1,0 +1,62 @@
+/* Styling for the algorithm-view SVG (quadtree, points, query graph). */
+.visual-frame {
+  position: relative;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  /* a real coordinate canvas, so a grid is appropriate here */
+  background:
+    linear-gradient(var(--line-soft) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px) 0 0 / 40px 40px,
+    var(--surface-2);
+  overflow: hidden;
+}
+.visual-frame > svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.visual-frame text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  fill: var(--muted);
+}
+
+.v-cells rect {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 0.8;
+}
+.v-pts > * {
+  fill: var(--line-strong);
+}
+.v-pts > .is-cand {
+  fill: var(--muted);
+}
+.v-pts > .is-match {
+  fill: var(--accent);
+}
+.v-match path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.2;
+  opacity: 0.85;
+}
+
+.v-query line {
+  stroke: var(--muted);
+  stroke-width: 1.2;
+}
+.v-query-bg {
+  fill: color-mix(in srgb, var(--bg) 88%, transparent);
+  stroke: var(--line);
+}
+.v-query-node {
+  fill: var(--accent);
+}
+.v-query text {
+  fill: var(--text);
+}
+.visual-frame .v-query-title {
+  fill: var(--muted);
+  font-size: 12px;
+}

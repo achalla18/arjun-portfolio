@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T00:00:00Z",
+  "title": "Design System: Arjun Challa — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "night-slate": { "role": "neutral", "displayName": "Night Slate", "canonical": "#0F172A", "tonalRamp": ["#020617", "#0F172A", "#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1"] },
+      "deep-panel": { "role": "neutral", "displayName": "Deep Panel", "canonical": "#162033", "tonalRamp": ["#0A1020", "#162033", "#1E293B", "#2B3A50", "#3B4A61", "#5B6B82", "#8291A6", "#B4C0CF"] },
+      "raised-slate": { "role": "neutral", "displayName": "Raised Slate", "canonical": "#1E293B", "tonalRamp": ["#0F172A", "#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0"] },
+      "contour-line": { "role": "neutral", "displayName": "Contour Line", "canonical": "#334155", "tonalRamp": ["#0F172A", "#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#F1F5F9"] },
+      "survey-gray": { "role": "neutral", "displayName": "Survey Gray", "canonical": "#94A3B8", "tonalRamp": ["#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F8FAFC"] },
+      "reading-slate": { "role": "neutral", "displayName": "Reading Slate", "canonical": "#CBD5E1", "tonalRamp": ["#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F1F5F9", "#F8FAFC"] },
+      "chalk-white": { "role": "neutral", "displayName": "Chalk White", "canonical": "#F8FAFC", "tonalRamp": ["#475569", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F1F5F9", "#F8FAFC", "#FFFFFF"] },
+      "route-blue": { "role": "primary", "displayName": "Route Blue", "canonical": "#7DD3FC", "tonalRamp": ["#082F49", "#0C4A6E", "#075985", "#0369A1", "#0284C7", "#38BDF8", "#7DD3FC", "#BAE6FD"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The name in the hero, once per page." },
+      "headline": { "displayName": "Headline", "purpose": "The hero tagline." },
+      "title": { "displayName": "Title", "purpose": "Section headings and popup titles." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs and list-row titles; prose under ~75 characters per line." },
+      "label": { "displayName": "Label (mono)", "purpose": "Dates, numbers, and technical metadata only." }
+    },
+    "shadows": [
+      { "name": "popup-lift", "value": "0 30px 80px -20px rgba(0, 0, 0, 0.7)", "purpose": "The detail dialog only; nothing on the page casts a shadow." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "All hover, selection, and dialog transitions (0.2s)." },
+      { "name": "marker-pulse", "value": "2.6s infinite", "purpose": "Ring around the selected map marker; disabled under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "row-stack", "value": "640px" },
+      { "name": "hero-stack", "value": "900px" },
+      { "name": "explorer-stack", "value": "920px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Understated link with a hairline underline; used in the hero, contact, and popups.",
+      "html": "<a class=\"ds-link\" href=\"#\">GitHub <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-link { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans, 'Geist Variable', system-ui, sans-serif); font-size: 0.9375rem; color: #CBD5E1; text-decoration: none; padding: 6px 0; border-bottom: 1px solid #334155; transition: color .2s cubic-bezier(.2,.7,.2,1), border-color .2s cubic-bezier(.2,.7,.2,1); } .ds-link:hover { color: #F8FAFC; border-color: #7DD3FC; } .ds-link:focus-visible { outline: 2px solid #7DD3FC; outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "List Row",
+      "kind": "custom",
+      "refersTo": "list-row",
+      "description": "One clickable line in Now, Past, and A Few of My Experiments; opens a popup.",
+      "html": "<button class=\"ds-row\" type=\"button\"><span class=\"ds-row-main\"><span class=\"ds-row-title\">Machine Learning Intern <span class=\"ds-row-at\">· North Carolina State University</span></span><span class=\"ds-row-desc\">Short-term flood prediction for Raleigh, NC.</span></span><span class=\"ds-row-side\">April 2025 – October 2025</span><svg class=\"ds-row-arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></button>",
+      "css": ".ds-row { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0,1fr) auto 18px; gap: 24px; align-items: baseline; width: 100%; padding: 18px 0; border: 0; background: none; text-align: left; cursor: pointer; font-family: var(--font-sans, 'Geist Variable', system-ui, sans-serif); font-size: 1.0625rem; color: #CBD5E1; } .ds-row::before { content: ''; position: absolute; inset: 0 -14px; border-radius: 6px; background: #162033; opacity: 0; transition: opacity .2s; z-index: -1; } .ds-row:hover::before { opacity: 1; } .ds-row-main { display: grid; gap: 3px; } .ds-row-title { color: #F8FAFC; font-weight: 500; } .ds-row-at { color: #CBD5E1; font-weight: 400; } .ds-row-desc { color: #94A3B8; font-size: .9375rem; } .ds-row-side { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: .75rem; color: #94A3B8; white-space: nowrap; } .ds-row-arrow { align-self: center; color: #334155; transition: transform .2s cubic-bezier(.2,.7,.2,1), color .2s; } .ds-row:hover .ds-row-arrow, .ds-row:focus-visible .ds-row-arrow { color: #7DD3FC; transform: translate(2px,-2px); } .ds-row:focus-visible { outline: 2px solid #7DD3FC; outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "nav",
+      "refersTo": "segmented-control",
+      "description": "Pill switch for the map's Geographic / Algorithm modes and the algorithm steps.",
+      "html": "<div class=\"ds-seg\" role=\"group\" aria-label=\"View\"><button type=\"button\" aria-pressed=\"true\">Geographic</button><button type=\"button\" aria-pressed=\"false\">Algorithm</button></div>",
+      "css": ".ds-seg { display: inline-flex; padding: 3px; border: 1px solid #334155; border-radius: 999px; background: #162033; } .ds-seg button { min-height: 38px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; color: #94A3B8; font-family: var(--font-sans, 'Geist Variable', system-ui, sans-serif); font-size: .875rem; cursor: pointer; transition: background .2s, color .2s; } .ds-seg button:hover { color: #F8FAFC; } .ds-seg button[aria-pressed='true'] { background: #1E293B; color: #F8FAFC; box-shadow: inset 0 0 0 1px #334155; } .ds-seg button:focus-visible { outline: 2px solid #7DD3FC; outline-offset: 3px; }"
+    },
+    {
+      "name": "Map Marker",
+      "kind": "custom",
+      "refersTo": "map-marker",
+      "description": "Project location marker; selected state turns Route Blue with a pulsing ring and label.",
+      "html": "<div class=\"ds-marker-demo\"><span class=\"ds-pm\"><span class=\"ds-ring\"></span><span class=\"ds-dot\"></span></span><span class=\"ds-pm is-selected\"><span class=\"ds-ring\"></span><span class=\"ds-dot\"></span><span class=\"ds-label\">South Sudan</span></span></div>",
+      "css": ".ds-marker-demo { display: flex; gap: 64px; align-items: center; padding: 24px; background: #0F172A; } .ds-pm { position: relative; width: 18px; height: 18px; } .ds-dot, .ds-ring { position: absolute; left: 50%; top: 50%; border-radius: 50%; transform: translate(-50%,-50%); } .ds-dot { width: 9px; height: 9px; background: #CBD5E1; box-shadow: 0 0 0 3px rgba(15,23,42,.9); } .ds-ring { width: 26px; height: 26px; border: 1px solid rgba(203,213,225,.35); } .ds-pm.is-selected .ds-dot { width: 11px; height: 11px; background: #7DD3FC; } .ds-pm.is-selected .ds-ring { border-color: #7DD3FC; } .ds-label { position: absolute; left: 22px; top: 50%; transform: translateY(-50%); white-space: nowrap; font-family: var(--font-sans, 'Geist Variable', system-ui, sans-serif); font-size: 12px; color: #F8FAFC; background: rgba(15,23,42,.85); border: 1px solid rgba(125,211,252,.5); border-radius: 3px; padding: 1px 6px; }"
+    },
+    {
+      "name": "Detail Popup",
+      "kind": "card",
+      "refersTo": "dialog",
+      "description": "The one lifted surface: a short story card for any project or role.",
+      "html": "<article class=\"ds-dialog\"><p class=\"ds-meta\">June 2026 – Present</p><h2 class=\"ds-title\">Project Collaborator</h2><p class=\"ds-sub\">Yale School of Public Health — Humanitarian Research Lab</p><p class=\"ds-text\">Building a satellite radar pipeline that detects flooding across South Sudan.</p><dl class=\"ds-hl\"><dt>27.4% → 0.01%</dt><dd>Missing satellite coverage after redesigning the baseline.</dd></dl><p class=\"ds-note\">Coverage and accuracy are separate measures.</p></article>",
+      "css": ".ds-dialog { max-width: 600px; padding: 32px 40px 36px; background: #0F172A; border: 1px solid #334155; border-radius: 10px; box-shadow: 0 30px 80px -20px rgba(0,0,0,.7); color: #CBD5E1; font-family: var(--font-sans, 'Geist Variable', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.65; } .ds-meta { margin: 0; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: .75rem; color: #94A3B8; } .ds-title { margin: 6px 0 0; color: #F8FAFC; font-size: 1.625rem; font-weight: 600; letter-spacing: -.02em; line-height: 1.15; } .ds-sub { margin: 6px 0 18px; } .ds-text { margin: 0; } .ds-hl { display: grid; grid-template-columns: 140px 1fr; gap: 16px; margin: 24px 0 0; padding-top: 20px; border-top: 1px solid rgba(51,65,85,.55); } .ds-hl dt { font-family: 'IBM Plex Mono', ui-monospace, monospace; color: #F8FAFC; } .ds-hl dd { margin: 0; font-size: .9375rem; } .ds-note { margin: 18px 0 0; color: #94A3B8; font-size: .875rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Atlas",
+    "overview": "The site reads like a dark cartographic plate: a deep slate field, faint contour lines and coordinate grids, and one highlighted route in pale sky blue. Everything that isn't the work recedes. Type and hairlines carry the structure, and the map, real or schematic, is the only place the page allows itself ornament.\n\nDensity is low and editorial. A large name, one headline, short paragraphs, then single-line lists separated by hairlines, each opening a short popup. There are no cards, no tags, and no decorative imagery. Visuals appear only where the subject is spatial: the hero's contour plate, the interactive map, and the algorithm canvas.",
+    "keyCharacteristics": [
+      "One dark slate field with tonal (not shadowed) layering.",
+      "A single accent, Route Blue, reserved for map signals and interaction states.",
+      "Geist for everything readable; IBM Plex Mono only for dates and metadata.",
+      "Hairline dividers and generous vertical space instead of containers.",
+      "Cartographic motifs (contours, grids, dashed extents) only on genuine map or coordinate surfaces."
+    ],
+    "rules": [
+      { "name": "The One Route Rule", "body": "Route Blue marks the thing being looked at or acted on: a selected place, a focused control, a matched result. If it appears where nothing is selected or interactive, remove it.", "section": "colors" },
+      { "name": "The No Gray-on-Color Rule", "body": "Text sits only on slate neutrals. Never place Survey Gray or any text on a Route Blue fill.", "section": "colors" },
+      { "name": "The Mono-Is-Metadata Rule", "body": "IBM Plex Mono is only for dates, numbers, and technical metadata. Headings, labels on controls, and prose are always Geist.", "section": "typography" },
+      { "name": "The 11px Floor Rule", "body": "No functional or readable text below 11px, including map labels and attribution.", "section": "typography" },
+      { "name": "The Flat Page Rule", "body": "Nothing on the page itself casts a shadow. If something needs to stand out, give it a tonal step or a hairline, not elevation.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep every section to a title and a list or a short paragraph block.",
+      "Do reserve Route Blue for selection, focus, hover, and map signals (≤ a few small marks per screen).",
+      "Do use mono only for dates and numbers, at 0.75rem or larger.",
+      "Do separate content with hairlines and vertical space.",
+      "Do label any schematic or illustrative visual as such."
+    ],
+    "donts": [
+      "Don't add cards, pill tags, badges, or icon tiles to lists.",
+      "Don't add shadows to anything except the popup.",
+      "Don't use uppercase, letterspaced micro-labels.",
+      "Don't add grid or contour backgrounds to surfaces that aren't maps or coordinate canvases.",
+      "Don't introduce a second accent color or gradients."
+    ]
+  }
+}
