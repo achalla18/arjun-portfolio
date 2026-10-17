@@ -38,7 +38,7 @@ map:
     highlights:
       - value: 0.50 in
         text: RMSE on 5-minute-ahead flood predictions in Raleigh (NC State).
-      - value: 8+
+      - value: 20+
         text: Federal and state datasets combined into one map of roads, drainage, and flood risk (Maryland).
     tech: [Python, TensorFlow, scikit-learn, Palantir Foundry]
     places:

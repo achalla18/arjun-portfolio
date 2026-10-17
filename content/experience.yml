@@ -43,7 +43,7 @@ now:
         text: Missing satellite coverage after redesigning the data pipeline.
       - value: ~75%
         text: Flood classification accuracy across South Sudan.
-    note: Currently working on implementing this to other regions in Africa.
+    note: Currently expanding this to other regions in Africa.
 
 past:
   - organization: Palantir Technologies
@@ -51,7 +51,7 @@ past:
     role: Valley Forge Grantee
     dates: June 2026 – September 2026
     summary: >-
-      1/30 members of founding cohort, Built independently in Palantir Foundry. Developed and deployed a flood prediction system for critical infrastructure, and built a geospatial intelligence platform integrating Maryland’s road networks, drainage systems, and hydrological data into a unified operational map for emergency response teams, partnered with the Maryland Department of Transportation on data access.
+      One of 30 members of the founding cohort. Built independently in Palantir Foundry: a flood prediction system for critical infrastructure, and a geospatial intelligence platform that combines Maryland’s road networks, drainage systems, and hydrological data into one operational map for emergency response teams. Partnered with the Maryland Department of Transportation on data access.
 
 
 
