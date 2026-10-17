@@ -19,8 +19,7 @@ now:
     dates: November 2025 – Present
     summary: Independent development and research in spatial intelligence, predictive modeling, and software engineering. Currently working with Maryland state agencies to improve flood prediction and emergency response.
 
-  - organization: University of Maryland
-    unit: Hanan Samet Lab
+  - organization: University of Maryland Samet Lab
     role: Research Assistant
     dates: May 2026 – Present
     summary: >-
@@ -31,8 +30,7 @@ now:
       - text: Showed that the structure of a query graph significantly affects spatial-query performance.
     note: Publication in progress; results pending peer review.
 
-  - organization: Yale School of Public Health
-    unit: Humanitarian Research Lab
+  - organization: Yale School of Public Health Humanitarian Research Lab
     role: Project Collaborator
     dates: June 2026 – Present
     summary: >-
@@ -47,7 +45,6 @@ now:
 
 past:
   - organization: Palantir Technologies
-    unit: Valley Forge Grant
     role: Valley Forge Grantee
     dates: June 2026 – September 2026
     summary: >-
@@ -81,8 +78,7 @@ past:
       - value: 1,100+
         text: Road-closure events analyzed; weather-related incidents doubled during Helene.
 
-  - organization: American University
-    unit: Department of Mathematics and Statistics
+  - organization: American University Department of Mathematics and Statistics
     role: Research Assistant
     dates: June 2025 – August 2025
     summary: >-
