@@ -12,7 +12,7 @@ intro: >-
 
 # Used by search engines and link previews (one or two sentences).
 description: >-
-  Arjun Challa, student researcher and software engineer working on geospatial
+  Arjun Challa, student researcher and software developer working on geospatial
   machine learning, remote sensing, spatial algorithms, and software systems.
   Founder of Geovaro Intelligence.
 
@@ -33,4 +33,4 @@ sections:
   exploreSubtitle: Research and engineering across the physical world.
   past: Past
   experiments: A Few of My Experiments
-  footerNote: The hero map is schematic.
+  footerNote: Building right now.

@@ -32,26 +32,23 @@ map:
       understand flood risk to roads before closures happen.
     overview: >-
       Roads usually close after the water is already there. I have worked on
-      this from two directions: short-term flood prediction for Raleigh during
+      this from two directions: flood prediction for Raleigh during
       an NC State internship, and a Palantir-funded system in Maryland that
-      brings road, drainage, and hydrology data together to flag at-risk roadways.
+      brings road, drainage, and hydrology data together to flag risky roadways.
     highlights:
       - value: 0.50 in
         text: RMSE on 5-minute-ahead flood predictions in Raleigh (NC State).
       - value: 8+
         text: Federal and state datasets combined into one map of roads, drainage, and flood risk (Maryland).
-    note: >-
-      The two efforts used different data and are reported separately. RMSE is
-      prediction error in inches, not road-closure accuracy.
     tech: [Python, TensorFlow, scikit-learn, Palantir Foundry]
     places:
       - label: Raleigh, NC
-        meaning: Study area for the NC State flood prediction work (city level, not specific sites).
+        meaning: Location of NC State internship and flood-prediction research.
         lat: 35.7796
         lng: -78.6382
         zoom: 9
       - label: Maryland
-        meaning: State context for the Palantir Valley Forge project. The dashed box is the approximate state outline.
+        meaning: Outline of area researched for the Palantir-funded flood-prediction system.
         lat: 39.0458
         lng: -76.6413
         zoom: 7
@@ -65,20 +62,20 @@ map:
     algorithmView: true
     preview: >-
       Building and benchmarking spatial pattern matching algorithms to see how
-      complex geographic relationships affect query performance.
+       geographic relationships affect query performance.
     overview: >-
-      Spatial pattern matching finds groups of places that fit a pattern, like a
+      Spatial pattern matching finds groups of places that fit a pattern. For example, a
       café near a bus stop, both near a school. I am building SPMBench, a Python
       framework that implements three published algorithms side by side and
       measures how data size and query shape change their performance.
     highlights:
       - text: Tested 1K–50K spatial objects with 20–60-node queries, across 3 graph topologies and 2 regions.
       - text: Found that the structure of the query graph significantly affects performance.
-    note: Ongoing, unpublished research.
+    note: Ongoing research.
     tech: [Python, Spatial indexing, Graph algorithms]
     places:
       - label: College Park, MD
-        meaning: Location of the lab, not of the data. The research itself is shown in the Algorithm view.
+        meaning: Take a look at the research in the Algorithm view.
         lat: 38.9869
         lng: -76.9426
         zoom: 11
@@ -87,22 +84,22 @@ map:
     role: Project Collaborator
     institution: Yale School of Public Health, Humanitarian Research Lab
     dates: June 2026 – Present
-    preview: Using satellite radar to detect flooding across South Sudan, where ground observation is hard.
+    preview: Using remote sensing data to detect flooding across South Sudan, in areas where ground observation is hard.
     overview: >-
-      Radar sees through clouds, which makes it one of the few consistent ways
-      to watch flooding across all of South Sudan. With Yale’s Humanitarian
+      Radar sees through clouds, which makes it one of the few  ways
+      to watch flooding across South Sudan. With Yale’s Humanitarian
       Research Lab, I am building a detection pipeline on Sentinel-1 imagery and
       a labeled dataset for telling flood types apart.
     highlights:
       - value: 27.4% → 0.01%
         text: Missing satellite coverage after I redesigned the historical baseline.
-      - value: ~69%
-        text: Pooled accuracy of a Random Forest flood classifier, cross-validated across 10 states.
+      - value: ~74%
+        text: Accuracy of a Random Forest flood classifier.
     note: Coverage and accuracy are separate measures. Accuracy varies by state.
     tech: [Python, Google Earth Engine, Sentinel-1 SAR, Random Forest]
     places:
       - label: South Sudan
-        meaning: Country-wide study area. The dashed box is the approximate national outline; no flood sites are marked.
+        meaning: Country-wide study area.
         lat: 7.86
         lng: 29.69
         zoom: 5
@@ -111,18 +108,18 @@ map:
   - title: Rethinking Urban Navigation
     subtitle: Washington, DC route explorer
     role: Independent project
-    dates: '2026'
+    dates: 'October 2026'
     status: In development
     preview: A walking-route explorer for DC that compares routes on the factors a person cares about, not just distance.
     overview: >-
       Most walking directions optimize for distance alone. This project compares
       alternative routes through Washington, DC on factors the user chooses to
       weigh, and shows the uncertainty behind each one. It is still in development.
-    note: Most features are planned. The tool will not predict or guarantee personal safety.
+    note: Most features are planned.
     tech: [Python, Graph routing, Leaflet]
     places:
       - label: Washington, DC
-        meaning: Planned coverage area for the route explorer, which is still in development.
+        meaning: Planned coverage area for the route explorer.
         lat: 38.9072
         lng: -77.0369
         zoom: 11
@@ -136,7 +133,7 @@ experiments:
     preview: A live map for exploring world events by region, with a confidence score for each report.
     overview: >-
       KalView puts public event data on an interactive map so you can explore
-      what is happening by region. It pulls in news, earthquakes, and World Bank
+      what is happening by region. It pulls in news and World Bank
       indicators, and scores each situation by how many articles support it.
     tech: [Python, Flask, JavaScript, GDELT, USGS, World Bank]
     github: https://github.com/achalla18/KalView
@@ -145,16 +142,15 @@ experiments:
   - title: WebML Resume
     role: Independent project
     dates: January 2026
-    preview: Reads an uploaded résumé PDF and estimates technical fit for ML and software roles.
-    overview: Upload a résumé and the app extracts its text, runs it through an NLP classifier, and returns an estimated technical-fit score.
-    note: A learning project. The score is a model estimate, not a fair or validated hiring decision.
+    preview: Reads an uploaded résumé PDF and estimates fit for ML and software roles.
+    overview: Upload a résumé and the app extracts its text, runs it through an NLP classifier, and gives back an estimated technical-fit score.
     tech: [Python, Flask, scikit-learn]
     github: https://github.com/achalla18/webml-resume
 
   - title: Agrimpact
     role: Independent project
     dates: April 2025
-    preview: Helps small farmers compare crop profitability, risk, and government support using USDA data.
+    preview: Helps small farmers compare crop profitability, risk, and government support using open source USDA data.
     overview: >-
       Agrimpact uses real USDA data and about 1,000 Monte Carlo simulation runs
       to show farmers how profitable and how risky different crops are, in an

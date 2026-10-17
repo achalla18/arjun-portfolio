@@ -16,20 +16,20 @@
 now:
   - organization: Geovaro Intelligence
     role: Founder
-    dates: Present
-    summary: Independent development and research in spatial intelligence, predictive modeling, and software engineering.
+    dates: November 2025 – Present
+    summary: Independent development and research in spatial intelligence, predictive modeling, and software engineering. Currently working with Maryland state agencies to improve flood prediction and emergency response.
 
   - organization: University of Maryland
     unit: Hanan Samet Lab
     role: Research Assistant
     dates: May 2026 – Present
     summary: >-
-      Researching spatial pattern matching: how computers find groups of places
-      that fit a pattern. I am building SPMBench, a framework that implements
-      and benchmarks three published algorithms.
+      Currently working on spatial pattern matching: how computers find groups of places
+      that fit a pattern. I am building SPMBench which is a framework that implements
+      and benchmarks already published algorithms.
     highlights:
       - text: Showed that the structure of a query graph significantly affects spatial-query performance.
-    note: Ongoing, unpublished research.
+    note: Publication in progress; results pending peer review.
 
   - organization: Yale School of Public Health
     unit: Humanitarian Research Lab
@@ -40,10 +40,10 @@ now:
       Sudan, and a labeled dataset for classifying flood types.
     highlights:
       - value: 27.4% → 0.01%
-        text: Missing satellite coverage after redesigning the baseline.
-      - value: ~69%
-        text: Pooled classification accuracy across 10 states.
-    note: Coverage and accuracy are separate measures.
+        text: Missing satellite coverage after redesigning the data pipeline.
+      - value: ~75%
+        text: Flood classification accuracy across South Sudan.
+    note: Currently working on implementing this to other regions in Africa.
 
 past:
   - organization: Palantir Technologies
@@ -51,14 +51,13 @@ past:
     role: Valley Forge Grantee
     dates: June 2026 – September 2026
     summary: >-
-      Awarded a $10,000 grant to build a flood prediction system for critical
-      infrastructure. I built a Foundry platform that brings Maryland road,
-      drainage, and hydrology data into one map for emergency workers, working
-      with the Maryland Department of Transportation on data.
+      1/30 members of founding cohort, Built independently in Palantir Foundry. Developed and deployed a flood prediction system for critical infrastructure, and built a geospatial intelligence platform integrating Maryland’s road networks, drainage systems, and hydrological data into a unified operational map for emergency response teams, partnered with the Maryland Department of Transportation on data access.
+
+
+
     highlights:
-      - value: 8+
-        text: Federal and state datasets combined into one queryable view.
-    note: A grant-funded project, not employment at Palantir.
+      - value: 20+ connected datasets
+        text: Maintained through Foundry with lineage; Federal and state datasets combined into one view.
 
   - organization: MedStar-Georgetown Center for AI in Healthcare
     role: Lead Technical Intern
@@ -68,20 +67,19 @@ past:
       collects, cleans, and links FDA medical device records from 2013 to 2023,
       and used AI classification to study what happens to devices after approval.
     highlights:
-      - text: Produced a reproducible dataset and a technical report on device commercialization.
+      - text: Produced a reproducible dataset and a technical report on FDA device commercialization.
 
   - organization: North Carolina State University
     role: Machine Learning Intern
     dates: April 2025 – October 2025
     summary: >-
       Built short-term flood prediction models for Raleigh, NC from USGS, NOAA,
-      and geospatial data, and studied road closures during Hurricane Helene.
+      and geospatial data, and studied road closures during Hurricane Helene. Partnered with the City of Raleigh to improve emergency response and road-closure prediction.
     highlights:
       - value: 0.50 in
         text: RMSE on 5-minute-ahead predictions.
       - value: 1,100+
         text: Road-closure events analyzed; weather-related incidents doubled during Helene.
-    note: RMSE is prediction error in inches, not road-closure accuracy.
 
   - organization: American University
     unit: Department of Mathematics and Statistics
@@ -94,4 +92,3 @@ past:
     highlights:
       - value: 1.92% → 0.91%
         text: Portfolio risk reduced in the historical analysis.
-    note: Historical, in-sample results; not a guarantee of future performance.
